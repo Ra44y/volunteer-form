@@ -2,278 +2,224 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer Sign-Up</title>
+  <title>Volunteer Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-
-  <header class="island">
-    <h1 class="bold push-1-2">Apply to be a tree planter</h1>
-    <p class="mega push-0">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-  </header>
-
-  <form class="gutter-1-2" action="https://formspree.io" method="POST">
-
-    <section >
-
-      <fieldset>
-        <legend class="tera">Personal details</legend>
-        <div class="unit">
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2 push">
-            <label for="name">Full name</label>
-            <input class="grid" id="name" name="name">
-            <p class="micro italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-          </div>
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2 push">
-            <label for="name-2">What should we call you?</label>
-            <input class="grid" id="name-2" name="name-2" type="text">
-            <p class="micro italic">What all your friends call you, e.g. “Liz”.</p>
-          </div>
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="date">Date of birth</label>
-            <input class="grid" id="date" name="date" type="date">
-          </div>
-
-          <div class="grid xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="size">T-shirt size</label>
-            <select class="grid" id="size" name="_size">
-              <option value="">Select a t-shirt size</option>
-              <option>Fitted: XS</option>
-              <option>Fitted: S</option>
-              <option>Fitted: M</option>
-              <option>Fitted: L</option>
-              <option>Fitted: XL</option>
-              <option>Straight-cut: XS</option>
-              <option>Straight-cut: S</option>
-              <option>Straight-cut: M</option>
-              <option>Straight-cut: L</option>
-              <option>Straight-cut: XL</option>
-          </div>
-
-          <div class="grid xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="email">Email</label>
-            <input class="grid" id="email" type="email" name="email">
-          </div>
-
-          <div class="grid xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="tel">Phone number (optional)</label>
-            <input class="grid" id="tel" name="tel" type="tel">
-          </div>
-
+  <section>
+    <div>
+      <header class="pad-t pad-b push-2">
+        <div class="wrapper gutter-1-2 ">
+          <h1 class="push-1-2 bold">Apply to be a tree planter</h1>
+          <p class="mega max-length no-auto-margins push-1-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
         </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Address</legend>
-        <div class="">
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="address">Street address</label>
-            <input id="address" name="address">
+      </header>
+      <div class="wrapper push-2">
+        <form method="POST" action="index.html">
+          <fieldset class="pad-t-1-2">
+            <legend class="gutter-1-2 giga bold push-1-2">Personal details</legend>
+            <div class="grid push-1-2 pad-t-1-2 gutter-1-2">
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-4">
+                <label class="push-1-4" for="name">Full name</label>
+                <input id="name" required>
+                <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-2">
+                <label class="push-1-4" for="nickname">What should we call you?</label>
+                <input id="nickname" required>
+                <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-2">
+                <label class="push-1-4" for="date">Date of birth</label>
+                <input type="date" id="date" required>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-2">
+                <label class="push-1-4" for="tshirt">T-shirt size</label>
+                <select id="tshirt">
+                  <option value="">Select a t-shirt size</option>
+                  <option>Fitted: XS</option>
+                  <option>Fitted: S</option>
+                  <option>Fitted: M</option>
+                  <option>Fitted: L</option>
+                  <option>Fitted: XL</option>
+                  <option>Straight-cut: XS</option>
+                  <option>Straight-cut: S</option>
+                  <option>Straight-cut: M</option>
+                  <option>Straight-cut: L</option>
+                  <option>Straight-cut: XL</option>
+                </select>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-2">
+                <label class="push-1-4" for="email">Email</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push-1-2">
+                <label class="push-1-4" for="tel">Phone number <span class="italic not-bold">(optional)</span></label>
+                <input type="tel" id="tel">
+              </div>
+            </div>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend class="push giga pad-t bold">Address</legend>
+            <div class="grid">
+              <div class="unit xs-1 m-1-2 l-1-2 push island-1-2">
+                <label for="street">Street address</label>
+                <input id="street">
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push island-1-2">
+                <label for="city">City</label>
+                <input id="city">
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 push island-1-2">
+                <label for="province">Province</label>
+                <select id="province">
+                  <option value="">Select a province</option>
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Manitoba</option>
+                  <option>New Brunswick</option>
+                  <option>Newfoundland & Labrador</option>
+                  <option>Northwest Territories</option>
+                  <option>Nova Scotia</option>
+                  <option>Nunavut</option>
+                  <option>Ontario</option>
+                  <option>Prince Edward Island</option>
+                  <option>Québec</option>
+                  <option>Saskatchewan</option>
+                  <option>Yukon</option>
+                </select>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2 island-1-2">
+                <label for="postal">Postal code</label>
+                <input id="postal">
+              </div>
+            </div>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend class="giga push-1-2 pad-t bold">What activities are you interested in helping with?</legend>
+            <div class="grid push">
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="dig">
+                <label class="push-1-4" for="dig">Digging holes</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="dirty">
+                <label class="push-1-4" for="dirty">Getting dirty</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="lift">
+                <label class="push-1-4" for="lift">Lifting heavy objects</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="drive">
+                <label class="push-1-4" for="drive">Driving people</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="transport">
+                <label class="push-1-4" for="transport">Transporting trees</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="photo">
+                <label class="push-1-4" for="photo">Taking photos</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="online">
+                <label class="push-1-4" for="online">Online publishing</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="manage">
+                <label class="push-1-4" for="manage">Managing people</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="giga push-1-2 bold">Do you have any experience with the following?</legend>
+            <div class="grid push">
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="shovel">
+                <label class="push-1-4" for="shovel">Shovels</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="gps">
+                <label class="push-1-4" for="gps">Hand-held GPS</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="write">
+                <label class="push-1-4" for="write">Writing & blogging</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="photography">
+                <label class="push-1-4" for="photography">Photography</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="climb">
+                <label class="push-1-4" for="climb">Trail & hill climbing</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="craft">
+                <label class="push-1-4" for="craft">Bush craft</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="atv">
+                <label class="push-1-4" for="atv">ATVs</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="plant">
+                <label class="push-1-4" for="plant">Plant identification</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="event">
+                <label class="push-1-4" for="event">Special event planning</label>
+              </div>
+              <div class="unit xs-1 m-1-2 l-1-2">
+                <input type="checkbox" id="speaking">
+                <label class="push-1-4" for="speaking">Speaking to groups</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="push-2">
+            <legend class="giga push-1-2 bold">Do you have a valid driver’s license?</legend>
+            <input type="radio" id="license-yes" name="license">
+            <label class="push-r" for="license-yes">Yes</label>
+            <input type="radio" id="license-no" name="license">
+            <label for="license-no">No</label>
+          </fieldset>
+          <fieldset class="push-2">
+            <legend class="giga push-1-2 bold">Do you have a pick-up truck you’d be willing to use?</legend>
+            <input type="radio" id="truck-yes" name="truck">
+            <label class="push-r" for="truck-yes">Yes</label>
+            <input type="radio" id="truck-no" name="truck">
+            <label for="truck-no">No</label>
+          </fieldset>
+          <fieldset class="push-2">
+            <legend class="giga push-1-2 bold">Do you have up-to-date first-aid certification?</legend>
+            <input type="radio" id="aid-yes" name="aid">
+            <label class="push-r" for="aid-yes">Yes</label>
+            <input type="radio" id="aid-no" name="aid">
+            <label for="aid-no">No</label>
+          </fieldset>
+          <hr>
+          <div class="push-2">
+            <label class="push giga pad-t bold" for="comments">Please let us know any comments or questions you may have. <span class="italic not-bold">(optional)</span></label>
+            <textarea id="comments" rows="8"></textarea>
           </div>
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="city">City</label>
-            <input id="city" name="city">
+          <hr>
+          <div class="center-text push pad-t">
+            <button class="btn mega gutter-2 pad-t-1-2 pad-b-1-2 bold" type="submit">Apply</button>
           </div>
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="province">Province</label>
-            <select id="province" name="_province">
-              <option value="">Select a province</option>
-              <option>Albert</option>
-              <option>British Columbia</option>
-              <option>Manitoba</option>
-              <option>New Brunswick</option>
-              <option>Newfoundland & Labrador</option>
-              <option>Northwest Territories</option>
-              <option>Nova Scotia</option>
-              <option>Nunavut</option>
-              <option>Ontario</option>
-              <option>Prince Edward Island</option>
-              <option>Québec</option>
-              <option>Saskatchewan</option>
-              <option>Yukon</option>
-            </select>
-          </div>
-
-          <div class="xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-            <label for="postal">Postal code</label>
-            <input id="postal" name="postal">
-          </div>
-
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">What activities are you interested in helping with?</legend>
-        <div class="">
-
-          <div class="">
-            <label for="hdig">Digging holes</label>
-            <input id="dig" type="checkbox" name="dig">
-          </div>
-
-          <div class="">
-            <label for="dirty">Getting dirty</label>
-            <input id="dirty" type="checkbox" name="dirty">
-          </div>
-
-          <div class="">
-            <label for="lift">Lifting heavy objects</label>
-            <input id="lift" type="checkbox" name="lift">
-          </div>
-
-          <div class="">
-            <label for="drive">Driving people</label>
-            <input id="drive" type="checkbox" name="drive">
-          </div>
-
-          <div class="">
-            <label for="trees">Transporting trees</label>
-            <input id="trees" type="checkbox" name="trees">
-          </div>
-
-          <div class="">
-            <label for="photos">Taking photos</label>
-            <input id="photos" type="checkbox" name="photos">
-          </div>
-
-          <div class="">
-            <label for="publishing">Online publishing</label>
-            <input id="publishing" type="checkbox" name="publishing">
-          </div>
-
-          <div class="">
-            <label for="manage">Managing people</label>
-            <input id="manage" type="checkbox" name="manage">
-          </div>
-
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Do you have any experience with the following?</legend>
-        <div class="">
-
-          <div class="">
-            <label for="shovels">Shovels</label>
-            <input id="shovels" type="checkbox" name="shovels">
-          </div>
-
-          <div class="">
-            <label for="gps">hand-held GPS</label>
-            <input id="gps" type="checkbox" name="gps">
-          </div>
-
-          <div class="">
-            <label for="write">Writing & Blogging</label>
-            <input id="write" type="checkbox" name="write">
-          </div>
-
-          <div class="">
-            <label for="photography">Photography</label>
-            <input id="photography" type="checkbox" name="photorgaphy">
-          </div>
-
-          <div class="">
-            <label for="trail">Trail & hill climbing</label>
-            <input id="trail" type="checkbox" name="trail">
-          </div>
-
-          <div class="">
-            <label for="bush">Bush craft</label>
-            <input id="bush" type="checkbox" name="bush">
-          </div>
-
-          <div class="">
-            <label for="atv">ATVs</label>
-            <input id="atv" type="checkbox" name="atv">
-          </div>
-
-          <div class="">
-            <label for="plant">Plant identification</label>
-            <input id="plant" type="checkbox" name="plant">
-          </div>
-
-          <div class="">
-            <label for="plan">Special event planning</label>
-            <input id="plan" type="checkbox" name="plan">
-          </div>
-
-          <div class="">
-            <label for="group">Speaking to groups</label>
-            <input id="group" type="checkbox" name="group">
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Do you have a valid driver’s license?</legend>
-        <div class="">
-
-          <div class="">
-            <input id="yes" type="radio" name="yes">
-            <label for="yes">Yes</label>
-            <input id="no" type="radio" name="no">
-            <label for="no">No</label>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Do you have a pick-up truck you’d be willing to use?</legend>
-        <div class="">
-
-          <div class="">
-            <input id="yes-2" type="radio" name="yes-2">
-            <label for="yes-2">Yes</label>
-            <input id="no-2" type="radio" name="no-2">
-            <label for="no-2">No</label>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Do you have up-to-date first-aid certification?</legend>
-        <div class="">
-
-          <div class="">
-            <input id="yes-3" type="radio" name="yes-3">
-            <label for="yes-3">Yes</label>
-            <input id="no-3" type="radio" name="no-3">
-            <label for="no-3">No</label>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend class="tera">Please let us know any comments or questions you may have.</legend>
-        <div class="">
-
-          <div class="">
-            <label for="comment"></label>
-            <textarea id="comment" name="comment" rows="8" cols="80"></textarea>
-          </div>
-        </div>
-
-        <div class="unit-content-center-horizontal">
-          <button type="button" name="button">Apply</button>
-        </div>
-      </fieldset>
-
+        </form>
+      </div>
       <footer>
-        <p>© Tree Hugger International Organization</p>
+        <p class="wrapper island-1-2">© Tree Hugger International Organization</p>
       </footer>
-    </section>
-  </form>
+    </div>
+  </section>
 </body>
 </html>

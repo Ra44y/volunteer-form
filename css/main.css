@@ -1,32 +1,33 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  font-family: "Droid Serif", serif;
+  font-family: "Noto Serif", serif;
 }
 
-*, *::before, *::after {
-
-  box-sizing: inherit;
-}
-
-header {
+header, footer {
   background-color: #70ad55;
-}
-
-h1, header p {
   color: #fff;
 }
 
-option, input, textarea, select {
+fieldset {
+  border: none;
+}
+
+select,
+input,
+textarea,
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
   border-color: #6e8c62;
+}
+
+span {
+  color: #70ad55;
+}
+
+hr {
+  border-top: 1px solid #70ad55;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border: none;
 }
